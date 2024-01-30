@@ -1,0 +1,25 @@
+#container{
+    background-color: black;
+
+}
+h1{
+    text-align: center;
+    border: 1px solid green;
+}
+#nav{
+    text-align: center;
+    border: 1px solid red;
+
+}
+.nav-list{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding-left: 20px;
+    
+
+}
+#footer{
+    height: 50px;
+    border-color:1px solid orange;
+}
