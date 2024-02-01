@@ -1,5 +1,9 @@
 #container{
-    background-color: black;
+    background-color: rgb(0, 242, 250);
+    margin: auto;
+    border: 1px solid black;
+    width: 1300px;
+    height: 800px;
 
 }
 h1{
@@ -20,6 +24,8 @@ h1{
 
 }
 #footer{
-    height: 50px;
+    margin-bottom: auto;
+    width: 1500px;
+    height: 150px;
     border-color:1px solid orange;
 }
