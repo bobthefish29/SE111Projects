@@ -6,7 +6,7 @@
 /*This is where the main fraim is and the styles for it*/
 html,body{
     background-image: url(../Images/MainPhotos/DontForBackground.jpeg);
-    background-size: 500px;
+    background-size: 300px;
     
 }
 #container{
@@ -65,7 +65,7 @@ h2{
 }
 /*This is the style for the linkes*/
 a:link{
-    color: pink;
+    color: yellow;
     font-size: 130px;
     
 }
