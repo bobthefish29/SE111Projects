@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--The meta data, -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="">
 
+    <!--This is the author and a very bref explantion of the movie.-->
+    <meta name="David Silverman" content="The movie is about spring field getting a dome because there town is too poluated. Hommer and his family excape the dome and make it to alaska. They have a relization and go back to the town. They stop the goverment from blowing up there city and every one is happy.">
 
+    <!--This is where the links to the outside recores like the css and the little image-->
     <link rel = "stylesheet" href="../MovieReview/CSS/stylesheet.css">
+    <link rel = "shortcut icon" href="../MovieReview/Images/favicon-32x32.ico" type="images/x-icon">
 
+    
 
-
-
-    <title>Movie Review</title>
+    <!--The Titale of the page-->
+    <title>The Simpsons Movie | Home</title>
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <h1>The Simpsons Movie</h1>
+            <!--This will just have the name -->
+            <h1><em>The Simpsons Movie</em></h1>
+            <hr>
         </div>
         <br>
         <div id="nav">
             <ul>
                 <li class="nav-list"><a href="#" >Home</a></li>
-                <li class="nav-list"><a href="#" >Cast</a></li>
-                <li class="nav-list"><a href="#" >Review</a></li>
+                <li class="nav-list"><a href="../MovieReview/Cast.html" >Cast</a></li>
+                <li class="nav-list"><a href="../MovieReview/Review.html" >Review</a></li>
             </ul>
+            <hr>
         </div>
         <div id="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae eum deserunt, quaerat, aspernatur pariatur libero incidunt eveniet doloremque voluptatem impedit provident reiciendis quis rerum, minus a facilis assumenda nisi!sfsssffs</p>
+            <!--The page tital-->
+            <h2>Home</h2>
+            <hr>
+            <div id="homeContent">
+                <p class="Hometext" >After Homer pollutes the town's water supply, Springfield is encased in a gigantic dome by the EPA and the Simpsons are declared fugitives and end up on the run from the goverment.</p>
+                <img id="HomePhoto" src="..\MovieReview/Images/MainPhotos/PhotoOfMovieCover.png" alt="The Simpsons movie">
+                <p class="Hometext"><b>Company Credits:</b> 20th Century Studios, Filmflex</p>
+                <p class="Hometext"><b>Releases:</b> July 27, 2007</p>
+                <p class="Hometext"><b>Genres:</b> Comedy & Adventure</p>
+                <p class="Hometext"><b>Rating:</b> PG-13</p>
+                <p class="Hometext"><b>Run Time:</b> 1H 27M</p>
+            </div>
+            <hr>
             
-
-        </div>
-        <div id= "footer">
-
-            <p>&copy; 2024 Html/javaScript NEIT X IMDB</p>
-    
+            <h2>Trailers</h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/XPG0MqIcby8?&mute=1&autoplay=true&si=ZeJk2WZFovfB6r0p&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
+    <div id= "footer">
+        <hr>
+        <p>&copy; 2024 Html/javaScript NEIT X IMDB</p>
+        <a id="footerlink" href="#header" >Header</a>
+        <br>
+        <br>
+        <img src="#" alt="The website is W3C approved">
+    </div>
+    
     
 </body>
 </html>
