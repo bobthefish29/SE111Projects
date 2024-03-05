@@ -39,6 +39,8 @@
 
 		//????????????????????????????
 
+		
+
 		//Make an array to store the people
 		var people = [];
 
@@ -114,8 +116,10 @@
 					//LAST: Drago
 					
 					//So it works but its not the first letter upsercase just the whole word.
+					let upperCaseName = capatalizeWord(people[i][key]);
+					let name = 
 
-					output += `<p> ${key.toUpperCase()}: ${people[i][key]}</p>`;
+					output += `<p> ${key.toUpperCase()}: ${upperCaseName}</p>`;
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
@@ -131,6 +135,14 @@
 				document.querySelector(`#output`).innerHTML = output
 
 
+		}
+
+		function capatalizeWord(wordToBeUppercase){
+			let word = wordToBeUppercase
+
+			let capitalized = word.charAt(0).toUpperCase() + word.slice(1)
+
+			return capitalized
 		}
 
     </script>
