@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Week 9 Files</title>
+	<style type="text/css">
+		.border {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+
+
+	//################----Read-----#################
+	
+	//There are a lot of console.log so i could see the outputs that were a that value
+
+	//###############################################
+
+
+
+
+
+
+	//Use this Array of objects to complete the assignment.
+	var people = [
+		{ first: "Jason", last: "Vorhees", credit: "Friday the 13th" },
+		{ first: "Freddy", last: "Krueger", credit: "A Nightmare on Elm Street" },
+		{ first: "Roger", last: "Rabbit", credit: "Who Framed Roger Rabbit" },
+		{ first: "Kevin", last: "McCallister", credit: "Home Alone" },
+		{ first: "Godzilla", last: "King of The Monsters", credit: "Godzilla" },
+		{ first: "Buzz", last: "Lightyear", credit: "Toy Story" },
+		{ first: "Marion", last: "Cobretti", credit: "Cobra" }
+	]
+
+	//console.log(people[0].first)
+
+	//this is getting the body for the final display
+	var body = document.querySelector(`body`)
+
+	//console.log(people);
+
+
+
+	//console.log(`tesing`)
+	for(let i = 0; i < people.length; i++){
+		//console.log(people);
+
+		//this is making a div for each recored in the people list
+		var tempDiv = document.createElement("div");
+		//adding the id of 0-lenght for each recored in the list
+		tempDiv.setAttribute("id", String(i));
+		//this is adding the class so they can have the border
+		tempDiv.setAttribute("class", 'border');
+		//console.log(tempDiv);
+
+		//this is for each object that is in people ding it 3 times
+		for(key in people[i]){
+
+			//console.log(people[i][key]);
+
+
+			//var add = document.createTextNode(`${people[i][key]}`)
+			
+			//This is making the pargraph emement
+			var item = document.createElement("p");
+			//console.log("Item V");
+			//console.log(item);
+			//this is makking the text that will be displayed
+			var add = document.createTextNode(`${people[i][key]}`)
+			//console.log("add V");
+			//console.log(add);
+
+			//adding the text to each <p> tag that was made
+			item.appendChild(add)
+			//This is adding the <p> tag to each div that was made
+			tempDiv.appendChild(item)
+
+
+
+
+
+
+		}
+		//console.log(tempDiv);
+
+		//This is adding the div to the body and getting the display
+		body.appendChild(tempDiv)
+
+	}
+
+	//console.log(`tesing`)
+
+
+</script>
+
+</html>
